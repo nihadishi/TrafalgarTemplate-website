@@ -1,0 +1,79 @@
+footer{
+    margin-top: 130px;
+    background-image: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    width: 100%;
+    min-height: 512px;
+    @include center;
+    text-align: left;
+    position: relative;
+   
+}
+.footer{
+    width: 85%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px;
+    margin-bottom: 30px;
+
+    &_col{
+        
+        &_h1{
+            font-family: mullish-thin;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 60px;
+            color: white;   
+            
+            &_div{
+                margin-right: 20px;
+                width: 41px;
+                height: 41px;
+                position: relative;
+                @include center;
+              &_img{
+                position: absolute;
+              }
+              &_t{
+                position: absolute;
+                color: $main-blue;
+                font-size: 26px;
+                font-weight: 700;
+                line-height: 33px;
+                
+              }
+            }
+        }
+        &_h2{
+            font-family: mullish-thin;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 38px;
+            color: white;            
+        }
+    }
+
+
+    &_dots{
+
+
+        &_left{
+            position: absolute;
+            left: -5px;
+            bottom: -5px;
+        }
+        &_right{
+            position: absolute;
+            right: 130px;
+            top: -65px;
+        }
+    }
+}
+
+.copyright{
+    padding-top: 38px;
+}
+.trafalgar_logo_footer{
+    @include center;
+    justify-content: start;
+}

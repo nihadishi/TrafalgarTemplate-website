@@ -1,0 +1,27 @@
+@media screen and (max-width:540px){
+.navbar_items ul{
+    @include flex-col;
+    align-items: center;
+    & li{
+        padding-bottom: 20px;
+        padding-right: 0 !important;
+        & b{
+            padding-right: 0 !important;
+        }
+    }
+}
+.customersaying_div_saying{
+    flex-direction: column;
+    @include center;
+    &_name{
+        padding: 0%;
+    }
+    &_about{
+        width: 300px;
+        margin-bottom: 50px;
+    }
+}
+.intro_img{
+    margin-top: 40px;
+}
+}

@@ -1,0 +1,73 @@
+header{
+    margin-top: 56px;
+    margin-bottom: 63px;
+    @include flex-row;
+    justify-content: space-around;
+    // @include center;
+    height: 41px;
+    width: 100%;
+    // position: fixed;
+}
+
+.navbar{
+    @include flex-row;
+    height: 100%;
+    cursor: pointer;
+    margin-bottom: 30px;
+   
+    &_logo{
+        position: relative;
+        width: 41px;
+        height: 41px;
+        padding-right: 12px;
+        @include center;
+           
+            &-name{
+                position: absolute;
+                font-weight: 700;
+                font-size: 26px;
+                color: white;
+                
+            }
+        
+    }
+    & b{
+        @include center;
+        font-weight: 700;
+        font-size: 24px;
+        
+    }
+
+}
+
+.navbar_items{
+    @include flex-row;
+    height: 100%;
+    & ul{
+        @include flex-row;
+        list-style-type: none;
+        align-items: center;
+        & li{
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        
+        & li + li{
+            padding-right: 41px;
+            color: $navbar-button;
+            opacity: 0.5;
+            
+        }
+        & li b{
+            opacity: 1;
+            padding-right: 41px;
+            color: $navbar-button;
+            opacity: 1;
+
+        }
+       
+    }
+}

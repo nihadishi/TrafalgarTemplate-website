@@ -1,0 +1,109 @@
+
+
+.our-services{
+    background-image: url(/src/img/pic/our-services_bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0 auto 221px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &_dots{
+        position: absolute;
+        right: 15%;
+        top: 50%;
+        z-index: 1;
+    }
+    & .h1-1{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 56px;
+        padding: 26px;
+
+    }
+
+    & .h3-1{
+        text-align: center;
+        max-width: 952px;
+        font-weight: 300;
+        font-size: 18px;
+        color: $main-gray;
+        padding: 33px;
+    }
+
+
+
+    &_cards{
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 34px;
+        margin: 80px auto;
+
+        &_card{
+            &:hover{
+                scale: 1.06;
+            }
+            transition: 0.3s;
+            cursor: pointer;
+            box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.072);
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction:column;
+            height: 354px;
+            width: 350px;
+            &_div{
+                width: 100%;
+                height: 100%;
+                padding: 46px 37px;
+                &_img{
+                    width: 100%;
+                    margin-bottom: 22.81px;
+                }
+
+                & .h1-2{
+                    font-weight: 700;
+                    font-size: 24px;
+                    padding: 10px auto;
+                    line-height: 56px;
+
+                }
+
+                & .h3-2{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    text-align: start;
+                    // height: 300px;
+                    width: 266px;
+                    color: $main-gray;
+                    padding: 10px auto;
+
+
+                }
+        }
+            
+        }
+    }
+    &_learnmore{
+        color: $main-blue;
+        border: 1px solid $main-blue;
+        width: 200px;
+        height: 60px;
+        border-radius: 40px;
+        font-size: 18px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+            background-color: $main-blue;
+            color: white;
+        }
+    }
+}

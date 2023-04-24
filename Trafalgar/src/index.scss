@@ -1,0 +1,8 @@
+@import "../src/sass/base/reset.scss";
+@import "../src/sass/abstracts/var.scss","../src/sass/abstracts/mixin.scss";
+@import "../src/sass/main/Header/navbar.scss";
+@import "../src/sass/main/Main/intro.scss","../src/sass/main/Main/our-section.scss","../src/sass/main/Main/providers.scss", "../src/sass/main/Main/mobileapps.scss"
+        ,"../src/sass/main/Main/customersaying.scss","../src/sass/main/Main/latestarticle.scss";
+@import "../src/sass/main/Footer/footer.scss";
+@import"../src/sass/main/global.scss";
+@import "../src/sass/responsive/tablet.scss","../src/sass/responsive/mobile.scss";

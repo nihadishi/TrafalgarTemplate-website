@@ -1,0 +1,62 @@
+.intro{
+    width: 100%;
+    margin: 0 auto 192px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    &_leftelement{
+        position: absolute;
+        left: 0;
+    }
+
+    &_consult{
+        
+       max-width: 445px;
+        height: 524px;//338height+186padding
+        margin-bottom: 30px;
+        
+
+
+        & h1{
+            padding-top: 186px;
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        & h3{
+            font-family: mullish-thin;
+            font-size: 21px;
+            line-height: 32px;
+            color: $main-gray;
+            font-weight: 300;
+            margin-bottom: 45px;
+        }
+        & button{
+            font-family: mullish-thin;
+            width: 200px;
+            height: 60px;
+            background-color: $main-blue;
+            border-radius: 30px;
+            border: none;
+            font-size: 18px;
+            color: white;
+            font-weight: 700;
+            line-height: 60px;
+            cursor: pointer;
+            transition: 0.2s;
+            margin-bottom: 20px;
+            &:hover{
+                background-color: #73DDFA;
+            }
+        }
+    }
+
+    &_img{
+        height: 498px;
+        width: 593px;
+        border-radius: 0px;
+
+    }
+}

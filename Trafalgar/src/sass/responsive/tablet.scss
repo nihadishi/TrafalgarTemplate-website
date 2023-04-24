@@ -1,0 +1,114 @@
+@media screen and (max-width:1200px){
+    .intro{
+        flex-direction: column;
+        @include center;
+    }
+
+    .our-services{
+        &_cards{
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .providers{
+        flex-direction: column;
+        @include center;
+        &_img{
+            width: 650px;
+            height: 477px;
+        }
+        &_learnmore{
+            margin: 0 auto;
+        }
+    }
+
+    .mobileapps{
+        flex-direction: column;
+        @include center;
+        &_div{
+            @include center;
+            flex-direction: column;
+        }
+        &_img{
+            width: 650px;
+            height: 477px;
+        }
+        &_learnmore{
+            margin: 0 auto;
+        }
+    }
+
+    .customersaying{
+        max-width: 900px;
+
+    }
+
+    .latestarticle{
+        &_cards{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            margin: 0 auto;
+        }
+    }
+
+    .footer{
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+
+        &_col{
+            @include center;
+            flex-direction: column;
+            
+        }
+    }
+    .copyright{
+        display: none;
+    }
+}
+
+@media screen and (max-width:990px){
+    header{
+        width: 100%;
+    }
+    // main{
+    //     @include flex-col;
+    //     justify-content: center;
+    //     align-items: center;
+        
+    // }
+    .customersaying{
+        &_div{
+            overflow-x: hidden;
+
+        }
+    }
+ 
+}
+@media screen and (max-width:990px){
+
+    header{
+        @include flex-col;
+        @include center;
+    }
+    .our-services{
+        &_cards{
+            grid-template-rows: repeat(6,1fr);
+            grid-template-columns: 1fr;
+        }
+    }
+}
+@media screen and (max-width:740px){
+    .intro_img{
+        width: 375px;
+        height: 323px;
+    }
+    .providers_img{
+        width: 375px;
+        height: 323px;
+    }
+    .mobileapps_img{
+        width: 375px;
+        height: 323px;
+    }
+}

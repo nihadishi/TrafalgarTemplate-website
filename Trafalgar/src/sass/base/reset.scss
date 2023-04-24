@@ -1,0 +1,19 @@
+@font-face {
+    font-family: mullish-med;
+    src: url(/src/fonts/static/Mulish-Medium.ttf);
+}
+@font-face {
+    font-family: mullish-bold;
+    src: url(/src/fonts/static/Mulish-Bold.ttf);
+}
+@font-face {
+    font-family: mullish-thin;
+    src: url(/src/fonts/static/Mulish-Light.ttf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: mullish-med;
+}

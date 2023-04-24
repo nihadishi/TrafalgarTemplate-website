@@ -1,0 +1,101 @@
+.latest{
+    width: 100%;
+    background-image: url(/src/img/pic/latestarticle_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 40%;
+   
+    &article{
+        @include flex-col;
+        margin: 222px auto 0;
+        max-width: 1120px;
+        position: relative;
+        
+       
+        &_dots{
+            position: absolute;
+            left: -40px;
+            top: 15%;
+            z-index: 1;
+        }
+
+        &_h1{
+            text-align: center;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 56px;
+            padding-bottom: 100px;
+            
+        }
+
+        &_cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 34px;
+
+        &_card{
+            background-color: #fff;
+            box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+            overflow: hidden;
+            width: 350px;
+            height: 512px;
+            border-radius: 20px;
+            display: grid;
+            grid-template-rows: 3fr 2fr 2fr 1fr;
+            &_img{
+                position: relative;
+                z-index: 3;
+            }
+            &_h2{
+                width: 285px;
+                height: 64px;
+                padding-left: 32px;
+                padding-top: 24px;
+                font-weight: 700;
+                font-size: 21px;
+                line-height: 32px;
+
+            }
+            &_h4{
+                width: 286px;
+                height: 84px;
+                padding-left: 32px;
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 28px;            
+                color: #7D7987;
+
+            }
+            &_readmore{
+                padding-left: 32px;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 28px;
+                color: #4089ED;
+                
+            }
+        }
+        }
+
+        &_h2{
+            width: 200px;
+            height: 56px;
+            color: $main-blue;
+            border: 1px solid $main-blue;
+            border-radius: 34px;
+            @include center;
+            margin: 72px auto 0;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 60px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                background-color: $main-blue;
+                color: white;
+            }
+        }
+
+
+    }
+}
